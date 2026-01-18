@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Daniela Menezes Guimarães — Desenvolvedora Full Stack</title>
+  <meta name="description" content="Desenvolvedora Full Stack especializada em criar soluções modernas e acessíveis. HTML, CSS, JavaScript, React, Node.js e SQL.">
+  <meta name="keywords" content="desenvolvedora, front-end, back-end, full stack, JavaScript, React, Node.js, HTML, CSS">
+  <meta name="author" content="Daniela Menezes Guimarães">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://daniela912-del.github.io/portfolio-dev/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniela912-del.github.io/portfolio-dev/">
+  <meta property="og:title" content="Daniela Menezes Guimarães — Desenvolvedora Full Stack">
+  <meta property="og:description" content="Desenvolvedora Full Stack especializada em criar soluções modernas e acessíveis.">
+  <meta property="og:image" content="https://daniela912-del.github.io/portfolio-dev/src/img/daniela.jpg">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniela Menezes Guimarães — Desenvolvedora Full Stack">
+  <meta name="twitter:description" content="Desenvolvedora Full Stack especializada em criar soluções modernas e acessíveis.">
+  <meta name="twitter:image" content="https://daniela912-del.github.io/portfolio-dev/src/img/daniela.jpg">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+  
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+  
+  <!-- Custom JS com defer para não bloquear carregamento -->
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">
+      portfólio<span class="brand-accent">.</span>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades" data-i18n="nav.habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projetos" data-i18n="nav.projetos">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato" data-i18n="nav.contato">Contato</a>
+        </li>
+      </ul>
+      
+      <div class="d-flex gap-3 align-items-center">
+        <!-- Seletor de Idioma -->
+        <div class="language-selector">
+          <button class="lang-btn active" data-lang="pt-br" title="Português">
+            <span>PT</span>
+          </button>
+          <button class="lang-btn" data-lang="en" title="English">
+            <span>EN</span>
+          </button>
+        </div>
+        
+        <a class="btn btn-contact" href="https://wa.me/5511992513139?text=Ol%C3%A1%20Daniela%2C%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp me-1"></i><span data-i18n="btn.fale">Fale comigo</span>
+        </a>
+        
+        <!-- Botão de Tema na Navbar -->
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">
+          <i class="bi bi-sun-fill" id="theme-icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="inicio" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h1 class="hero-title">
+          <span data-i18n="hero.title1">Olá, eu sou</span><br>
+          <div class="typing-container">
+            <span class="typing-text" data-typing='["Daniela Menezes","Desenvolvedora Front‑end","Desenvolvedora Back‑end","Analista de Sistemas"]' data-typing-en='["Daniela Menezes","Front‑end Developer","Back‑end Developer","Systems Analyst"]'></span>
+            <span class="typing-cursor">|</span>
+          </div>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Desenvolvo aplicações modernas, acessíveis e responsivas com foco na experiência do usuário, performance e código de qualidade.</p>
+        
+        <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+          <a class="btn btn-contact btn-lg" href="https://wa.me/5511992513139?text=Ol%C3%A1%20Daniela%2C%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato via WhatsApp">
+            <i class="bi bi-whatsapp me-2" aria-hidden="true"></i><span data-i18n="hero.btnFale">Fale comigo</span>
+          </a>
+          <a class="btn btn-outline-light btn-lg" href="#projetos" aria-label="Ver meus projetos">
+            <span data-i18n="hero.btnProjetos">Meus projetos</span> <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="hero-image-container">
+          <img class="hero-image" src="./src/img/daniela.jpg" alt="Daniela Menezes Guimarães - Desenvolvedora Full Stack" width="500" height="500" loading="eager">
+          <div class="hero-image-bg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-content">
+          <span class="section-badge" data-i18n="sobre.badge">👋 Conheça minha história</span>
+          <h2 class="section-title mb-4" data-i18n="sobre.title">Transformando ideias em soluções digitais</h2>
+          <p class="about-text mb-4" data-i18n="sobre.text1">
+            Sou desenvolvedora apaixonada por criar experiências digitais que fazem a diferença. Com formação em <strong>Análise e Desenvolvimento de Sistemas</strong>, combino criatividade e técnica para desenvolver interfaces intuitivas e funcionais.
+          </p>
+          <p class="about-text mb-4" data-i18n="sobre.text2">
+            Minha jornada começou com curiosidade sobre como as coisas funcionam na web, e hoje trabalho com tecnologias modernas para criar soluções que realmente importam para as pessoas.
+          </p>
+          
+          <!-- Stats ao lado do texto -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label" data-i18n="sobre.stat1">Projetos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2+</div>
+              <div class="stat-label" data-i18n="sobre.stat2">Anos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label" data-i18n="sobre.stat3">Dedicação</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label" data-i18n="sobre.stat4">Tech</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="about-visual">
+          <div class="about-image-container">
+            <div class="about-decorations">
+              <div class="decoration-circle decoration-1"></div>
+              <div class="decoration-circle decoration-2"></div>
+              <div class="decoration-circle decoration-3"></div>
+            </div>
+            <img src="./src/img/Imagem-sobre.jpg" alt="Daniela desenvolvendo soluções digitais" class="about-image" width="600" height="400" loading="lazy">
+            <div class="about-badge">
+              <i class="bi bi-laptop"></i>
+              <div>
+                <strong>Full Stack</strong>
+                <span>Developer</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cards flutuantes -->
+          <div class="floating-cards">
+            <div class="floating-card card-1">
+              <i class="bi bi-lightbulb"></i>
+              <span data-i18n="sobre.card1">Soluções Criativas</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="bi bi-heart"></i>
+              <span data-i18n="sobre.card2">Feito com paixão</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class="bi bi-rocket"></i>
+              <span data-i18n="sobre.card3">Sempre aprendendo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades -->
+<section id="habilidades" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" data-i18n="habilidades.title">Habilidades</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Front-end -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-primary">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.frontend">Front-end</h5>
+          <p class="skill-description" data-i18n="habilidades.frontend_desc">HTML5, CSS3, JavaScript ES6+, React, Bootstrap</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="90"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Back-end -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-success">
+            <i class="bi bi-server"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.backend">Back-end</h5>
+          <p class="skill-description" data-i18n="habilidades.backend_desc">Node.js (estudando), SQL (estudando), APIs REST</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="65"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Design -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-warning">
+            <i class="bi bi-palette"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.design">Design</h5>
+          <p class="skill-description" data-i18n="habilidades.design_desc">UI/UX, Figma, Canva, WordPress</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="80"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Ferramentas -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-info">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.tools">Ferramentas</h5>
+          <p class="skill-description" data-i18n="habilidades.tools_desc">Git, VS Code, GitHub, Postman</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="95"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Análise de Dados -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-danger">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.analytics">Análise de Dados</h5>
+          <p class="skill-description" data-i18n="habilidades.analytics_desc">Power BI, Excel, SQL (estudando), Dashboards</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="70"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Soft Skills -->
+      <div class="col">
+        <div class="skill-card">
+          <div class="skill-icon bg-dark">
+            <i class="bi bi-people"></i>
+          </div>
+          <h5 class="skill-title" data-i18n="habilidades.soft">Soft Skills</h5>
+          <p class="skill-description" data-i18n="habilidades.soft_desc">Comunicação, Trabalho em equipe, Resolução de problemas</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-progress="88"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4" data-i18n="projetos.title">Projetos em Destaque</h2>
+    <p class="text-center text-muted mb-5" data-i18n="projetos.subtitle">Alguns dos meus trabalhos mais recentes desenvolvidos com tecnologias modernas</p>
+    <div class="row g-4 justify-content-center">
+      <!-- Projeto 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./src/img/casa-viver-bem.png" alt="Casa Viver Bem - Site Institucional" class="project-image" width="800" height="600" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-icon">
+              <i class="bi bi-house-heart"></i>
+            </div>
+            <h3 class="project-title" data-i18n="projetos.project1_title">Casa Viver Bem</h3>
+            <p class="project-description" data-i18n="projetos.project1_desc">Site institucional para casa de repouso com design moderno e foco na experiência do usuário. Interface responsiva e acessível.</p>
+            <div class="project-links">
+              <a href="https://site-para-casa-de-repouso.vercel.app" class="project-link btn-primary" target="_blank" rel="noopener">
+                <i class="bi bi-globe"></i> <span data-i18n="projetos.btnSite">Ver Site</span>
+              </a>
+              <a href="https://github.com/Daniela912-del/Site-para-casa-de-repouso" class="project-link btn-github" target="_blank" rel="noopener" title="Ver no GitHub">
+                <i class="bi bi-github"></i> <span data-i18n="projetos.btnGithub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./src/img/formulario.png" alt="Sistema de Formulários" class="project-image" width="800" height="600" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech">
+               <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-icon">
+              <i class="bi bi-card-checklist"></i>
+            </div>
+            <h3 class="project-title" data-i18n="projetos.project2_title">Sistema de Formulários</h3>
+            <p class="project-description" data-i18n="projetos.project2_desc">Aplicação web para criação e gerenciamento de formulários dinâmicos com validação em tempo real e interface intuitiva.</p>
+            <div class="project-links">
+              <a href="https://meu-primeiro-formul-rio-funcional-y.vercel.app/" class="project-link btn-primary" target="_blank" rel="noopener">
+                <i class="bi bi-globe"></i> <span data-i18n="projetos.btnSite">Ver Site</span>
+              </a>
+              <a href="https://github.com/Daniela912-del/Meu-Primeiro-Formul-rio-Funcional" class="project-link btn-github" target="_blank" rel="noopener" title="Ver no GitHub">
+                <i class="bi bi-github"></i> <span data-i18n="projetos.btnGithub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+      <!-- Projeto 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./src/img/screencapture-spider-man-seven-sand-vercel-app-2026-01-17-10_35_16.png" alt=" spider-man" class="project-image" width="800" height="600" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech">
+               <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-icon">
+              <i class="bi bi-mask"></i>
+            </div>
+            <h3 class="project-title" data-i18n="projetos.project3_title">Multiversos do Homem-Aranha ao Vivo</h3>
+            <p class="project-description" data-i18n="projetos.project3_desc">Aplicação interativa que apresenta os multiversos do Homem-Aranha em tempo real com elementos visuais dinâmicos e narrativas envolventes.</p>
+            <div class="project-links">
+             <a href="https://spider-man-seven-sand.vercel.app/" class="project-link btn-primary" target="_blank" rel="noopener">
+                <i class="bi bi-globe"> </i> <span data-i18n="projetos.btnSite">Ver Site</span>
+              </a>
+              <a href="https://github.com/Daniela912-del/Spider-Man" class="project-link btn-github" target="_blank" rel="noopener" title="Ver no GitHub">
+                <i class="bi bi-github"></i> <span data-i18n="projetos.btnGithub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Projeto 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./src/img/screencapture-lista-de-tarefas-1pmx-vercel-app-2026-01-17-10_21_23.png" alt="Lista de Tarefas" class="project-image" width="800" height="600" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech">
+               <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-icon">
+              <i class="bi bi-check2-square"></i>
+            </div>
+            <h3 class="project-title" data-i18n="projetos.project4_title">Lista de Tarefas</h3>
+            <p class="project-description" data-i18n="projetos.project4_desc">Aplicação prática para gerenciar tarefas diárias com funcionalidades de adicionar, editar, deletar e marcar tarefas como concluídas.</p>
+            <div class="project-links">
+             <a href="https://lista-de-tarefas-1pmx.vercel.app/" class="project-link btn-primary" target="_blank" rel="noopener">
+                <i class="bi bi-globe"></i> <span data-i18n="projetos.btnSite">Ver Site</span>
+              </a>
+              <a href="https://github.com/Daniela912-del/lista-de-tarefas" class="project-link btn-github" target="_blank" rel="noopener" title="Ver no GitHub">
+                <i class="bi bi-github"></i> <span data-i18n="projetos.btnGithub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Projeto 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./src/img/screencapture-daniela912-del-seal-world-vercel-app-2026-01-17-10_41_49.png" alt="Seal World - Parque de Golfinhos" class="project-image" width="800" height="600" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-tech">
+               <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-icon">
+              <i class="bi bi-water"></i>
+            </div>
+            <h3 class="project-title" data-i18n="projetos.project5_title">Seal World - Parque de Golfinhos</h3>
+            <p class="project-description" data-i18n="projetos.project5_desc">Site institucional para parque aquático com informações sobre atrações, horários, ingressos e experiências imersivas com golfinhos e animais marinhos.</p>
+            <div class="project-links">
+             <a href="https://daniela912-del-seal-world.vercel.app/" class="project-link btn-primary" target="_blank" rel="noopener">
+                <i class="bi bi-globe"></i> <span data-i18n="projetos.btnSite">Ver Site</span>
+              </a>
+              <a href="https://github.com/Daniela912-del/-Daniela912-del-Seal-World" class="project-link btn-github" target="_blank" rel="noopener" title="Ver no GitHub">
+                <i class="bi bi-github"></i> <span data-i18n="projetos.btnGithub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" data-i18n="contato.title">Contato</h2>
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <div class="contact-form-container">
+          <form id="form-contato" novalidate>
+            <div class="mb-3">
+              <label for="nome" class="form-label" data-i18n="contato.nome">Nome</label>
+              <input type="text" id="nome" class="form-control" placeholder="Seu nome" data-i18n-placeholder="contato.nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label" data-i18n="contato.email">E-mail</label>
+              <input type="email" id="email" class="form-control" placeholder="seu@email.com" data-i18n-placeholder="contato.email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label" data-i18n="contato.mensagem">Mensagem</label>
+              <textarea id="mensagem" class="form-control" rows="4" placeholder="Como posso ajudar?" data-i18n-placeholder="contato.mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-contact w-100 btn-lg">
+              <i class="bi bi-send-fill me-2"></i><span data-i18n="contato.btnEnviar">Enviar mensagem</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Informações de Contato</h3>
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:dannye.menezes@hotmail.com">dannye.menezes@hotmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://wa.me/5511992513139" target="_blank" rel="noopener noreferrer">(11) 99251-3139</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/danielamenezesguimar%C3%A3es/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/Daniela912-del" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="footer-text mb-3">&copy; 2026 Daniela Menezes Guimarães - Desenvolvedora Full Stack</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/daniela-menezes-guimar%C3%A3es-19b0862a5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="Conecte-se no LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/Daniela912-del" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="Veja meus repositórios">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:dannye.menezes@hotmail.com" aria-label="E-mail" data-tooltip="Envie um e-mail">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Schema.org JSON-LD para SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daniela Menezes Guimarães",
+  "jobTitle": "Desenvolvedora Full Stack",
+  "description": "Desenvolvedora Full Stack especializada em criar soluções modernas e acessíveis",
+  "url": "https://daniela912-del.github.io/portfolio-dev/",
+  "image": "https://daniela912-del.github.io/portfolio-dev/src/img/daniela.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/daniela-menezes-guimar%C3%A3es-19b0862a5/",
+    "https://github.com/daniela912-del"
+  ],
+  "knowsAbout": ["JavaScript", "HTML", "CSS", "React", "Node.js", "SQL", "Bootstrap"],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Diversos cursos de tecnologia"
+  }
+}
+</script>
+
+<!-- Inicializar tema imediatamente após carregar o DOM -->
+<script>
+(function() {
+  const savedTheme = localStorage.getItem('theme') || 
+                     (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.documentElement.setAttribute('data-bs-theme', savedTheme);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+{
+  "pt-br": {
+    "nav": {
+      "sobre": "Sobre",
+      "habilidades": "Habilidades",
+      "projetos": "Projetos",
+      "contato": "Contato"
+    },
+    "btn": {
+      "fale": "Fale comigo"
+    },
+    "hero": {
+      "title1": "Olá, eu sou",
+      "subtitle": "Desenvolvo aplicações modernas, acessíveis e responsivas com foco na experiência do usuário, performance e código de qualidade.",
+      "btnFale": "Fale comigo",
+      "btnProjetos": "Meus projetos"
+    },
+    "sobre": {
+      "badge": "👋 Conheça minha história",
+      "title": "Transformando ideias em soluções digitais",
+      "text1": "Sou desenvolvedora apaixonada por criar experiências digitais que fazem a diferença. Com formação em Análise e Desenvolvimento de Sistemas, combino criatividade e técnica para desenvolver interfaces intuitivas e funcionais.",
+      "text2": "Minha jornada começou com curiosidade sobre como as coisas funcionam na web, e hoje trabalho com tecnologias modernas para criar soluções que realmente importam para as pessoas.",
+      "stat1": "Projetos",
+      "stat2": "Anos",
+      "stat3": "Dedicação",
+      "stat4": "Tech",
+      "card1": "Soluções Criativas",
+      "card2": "Feito com paixão",
+      "card3": "Sempre aprendendo"
+    },
+    "habilidades": {
+      "title": "Habilidades",
+      "frontend": "Front-end",
+      "frontend_desc": "HTML5, CSS3, JavaScript ES6+, React, Bootstrap",
+      "backend": "Back-end",
+      "backend_desc": "Node.js (estudando), SQL (estudando), APIs REST",
+      "design": "Design",
+      "design_desc": "UI/UX, Figma, Canva, WordPress",
+      "tools": "Ferramentas",
+      "tools_desc": "Git, VS Code, GitHub, Postman",
+      "analytics": "Análise de Dados",
+      "analytics_desc": "Power BI, Excel, SQL (estudando), Dashboards",
+      "soft": "Soft Skills",
+      "soft_desc": "Comunicação, Trabalho em equipe, Resolução de problemas"
+    },
+    "projetos": {
+      "title": "Projetos em Destaque",
+      "subtitle": "Alguns dos meus trabalhos mais recentes desenvolvidos com tecnologias modernas",
+      "project1_title": "Casa Viver Bem",
+      "project1_desc": "Site institucional para casa de repouso com design moderno e foco na experiência do usuário. Interface responsiva e acessível.",
+      "project2_title": "Sistema de Formulários",
+      "project2_desc": "Aplicação web para criação e gerenciamento de formulários dinâmicos com validação em tempo real e interface intuitiva.",
+      "project3_title": "Multiversos do Homem-Aranha ao Vivo",
+      "project3_desc": "Aplicação interativa que apresenta os multiversos do Homem-Aranha em tempo real com elementos visuais dinâmicos e narrativas envolventes.",
+      "project4_title": "Lista de Tarefas",
+      "project4_desc": "Aplicação prática para gerenciar tarefas diárias com funcionalidades de adicionar, editar, deletar e marcar tarefas como concluídas.",
+      "project5_title": "Seal World - Parque de Golfinhos",
+      "project5_desc": "Site institucional para parque aquático com informações sobre atrações, horários, ingressos e experiências imersivas com golfinhos e animais marinhos.",
+      "btnSite": "Ver Site",
+      "btnGithub": "GitHub"
+    },
+    "contato": {
+      "title": "Contato",
+      "infoTitle": "Informações de Contato",
+      "nome": "Nome",
+      "email": "E-mail",
+      "mensagem": "Mensagem",
+      "btnEnviar": "Enviar mensagem",
+      "placeholder_nome": "Seu nome",
+      "placeholder_email": "seu@email.com",
+      "placeholder_msg": "Como posso ajudar?"
+    },
+    "footer": {
+      "copy": "© 2026 Daniela Menezes Guimarães - Desenvolvedora Full Stack"
+    }
+  },
+  "en": {
+    "nav": {
+      "sobre": "About",
+      "habilidades": "Skills",
+      "projetos": "Projects",
+      "contato": "Contact"
+    },
+    "btn": {
+      "fale": "Talk to me"
+    },
+    "hero": {
+      "title1": "Hello, I'm",
+      "subtitle": "I develop modern, accessible and responsive applications with a focus on user experience, performance and quality code.",
+      "btnFale": "Talk to me",
+      "btnProjetos": "My projects"
+    },
+    "sobre": {
+      "badge": "👋 Get to know my story",
+      "title": "Transforming ideas into digital solutions",
+      "text1": "I'm a developer passionate about creating digital experiences that make a difference. With training in Systems Analysis and Development, I combine creativity and technique to develop intuitive and functional interfaces.",
+      "text2": "My journey began with curiosity about how things work on the web, and today I work with modern technologies to create solutions that really matter to people.",
+      "stat1": "Projects",
+      "stat2": "Years",
+      "stat3": "Dedication",
+      "stat4": "Tech",
+      "card1": "Creative Solutions",
+      "card2": "Made with passion",
+      "card3": "Always learning"
+    },
+    "habilidades": {
+      "title": "Skills",
+      "frontend": "Front-end",
+      "frontend_desc": "HTML5, CSS3, JavaScript ES6+, React, Bootstrap",
+      "backend": "Back-end",
+      "backend_desc": "Node.js (learning), SQL (learning), REST APIs",
+      "design": "Design",
+      "design_desc": "UI/UX, Figma, Canva, WordPress",
+      "tools": "Tools",
+      "tools_desc": "Git, VS Code, GitHub, Postman",
+      "analytics": "Data Analysis",
+      "analytics_desc": "Power BI, Excel, SQL (learning), Dashboards",
+      "soft": "Soft Skills",
+      "soft_desc": "Communication, Teamwork, Problem Solving"
+    },
+    "projetos": {
+      "title": "Featured Projects",
+      "subtitle": "Some of my most recent work developed with modern technologies",
+      "project1_title": "Casa Viver Bem",
+      "project1_desc": "Institutional website for a rest home with modern design and focus on user experience. Responsive and accessible interface.",
+      "project2_title": "Form System",
+      "project2_desc": "Web application for creating and managing dynamic forms with real-time validation and intuitive interface.",
+      "project3_title": "Spider-Man Multiverses Live",
+      "project3_desc": "Interactive application that showcases Spider-Man multiverses in real-time with dynamic visual elements and engaging narratives.",
+      "project4_title": "Task List",
+      "project4_desc": "Practical application to manage daily tasks with features to add, edit, delete and mark tasks as completed.",
+      "project5_title": "Seal World - Dolphin Park",
+      "project5_desc": "Institutional website for aquatic park with information about attractions, hours, tickets and immersive experiences with dolphins and marine animals.",
+      "btnSite": "View Site",
+      "btnGithub": "GitHub"
+    },
+    "contato": {
+      "title": "Contact",
+      "infoTitle": "Contact Information",
+      "nome": "Name",
+      "email": "Email",
+      "mensagem": "Message",
+      "btnEnviar": "Send message",
+      "placeholder_nome": "Your name",
+      "placeholder_email": "your@email.com",
+      "placeholder_msg": "How can I help?"
+    },
+    "footer": {
+      "copy": "© 2026 Daniela Menezes Guimarães - Full Stack Developer"
+    }
+  }
+}
