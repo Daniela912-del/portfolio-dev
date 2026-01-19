@@ -130,11 +130,11 @@ class LanguageManager {
     // Reinicializar efeito de digitação com novo idioma
     this.updateTypingEffect(lang);
   }
-  
+     
   getNestedValue(obj, path) {
     const keys = path.split('.');
     let value = obj;
-    
+
     for (const k of keys) {
       value = value?.[k];
       if (value === undefined) return null;
@@ -301,10 +301,10 @@ window.toggleTheme = function() {
   const currentTheme = html.getAttribute('data-bs-theme') || 'dark';
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
   
-  // Aplicar novo tema
+  //  tema
   html.setAttribute('data-bs-theme', newTheme);
   
-  // Atualizar ícone
+  //  ícone
   const icon = document.getElementById('theme-icon');
   if (icon) {
     icon.className = newTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
@@ -323,10 +323,6 @@ window.toggleTheme = function() {
   }
 };
 
-/**
- * 🎨 Gerenciador de Tema (Claro/Escuro)
- * Controla alternância e persistência do tema
- */
 class ThemeManager {
   constructor() {
     this.documentElement = document.documentElement;
@@ -338,7 +334,7 @@ class ThemeManager {
   }
   
   initialize() {
-    // Garantir que o ícone esteja correto
+  
     this.updateThemeIcon(this.currentTheme);
     this.bindEventListeners();
   }
@@ -381,7 +377,7 @@ class ThemeManager {
   }
   
   bindEventListeners() {
-    // Não adicionar event listener aqui, pois já está no HTML com onclick
+
     
     // Escuta mudanças de preferência do sistema
     window.matchMedia('(prefers-color-scheme: dark)')
